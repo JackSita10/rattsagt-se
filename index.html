@@ -1,33 +1,14 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <title>Rätt Sagt – Logga in</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f4f4f4; display: flex; height: 100vh; align-items: center; justify-content: center; }
-        .login-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
-        input[type="password"], input[type="text"] { padding: 10px; margin: 10px 0; width: 100%; }
-        button { padding: 10px 20px; background: #222; color: white; border: none; cursor: pointer; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Logga in – Rätt Sagt</title>
 </head>
 <body>
-    <div class="login-box">
-        <h2>Logga in</h2>
-        <input type="text" id="username" placeholder="Användarnamn">
-        <input type="password" id="password" placeholder="Lösenord">
-        <button onclick="login()">Logga in</button>
-        <p id="message" style="color: red;"></p>
-    </div>
-    <script>
-        function login() {
-            const user = document.getElementById('username').value;
-            const pass = document.getElementById('password').value;
-            if (user === 'Byggare10' && pass === 'Rattsagt2025') {
-                window.location.href = 'dashboard.html';
-            } else {
-                document.getElementById('message').innerText = 'Fel användarnamn eller lösenord. Försök igen.';
-            }
-        }
-    </script>
+  <form action="dashboard.html" method="get">
+    <label for="password">Lösenord:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Logga in</button>
+  </form>
 </body>
 </html>

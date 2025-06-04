@@ -2,38 +2,18 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RättSagt – Logga in</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script>
-    if (location.protocol !== 'https:') {
-      location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-    }
-  </script>
+    <meta charset="UTF-8">
+    <title>Rätt sagt – Admininloggning</title>
 </head>
 <body>
-  <div class="login-container">
-    <div class="login-box">
-      <img src="logo.png" alt="RättSagt logotyp" class="logo"/>
-      <h1>Logga in</h1>
-      <form onsubmit="login(event)">
-        <input type="password" id="password" placeholder="Lösenord" required/>
-        <button type="submit">Logga in</button>
-      </form>
-      <p id="error" class="error-message"></p>
-    </div>
-  </div>
-  <script>
-    function login(e) {
-      e.preventDefault();
-      const password = document.getElementById("password").value;
-      if (password === "rattsagt2024") {
-        window.location.href = "dashboard.html";
-      } else {
-        document.getElementById("error").textContent = "Fel lösenord. Försök igen.";
-      }
-    }
-  </script>
+    <h1>Välkommen till Rätt sagt Adminpanel</h1>
+    <form action="/admin" method="post">
+        <label for="username">Användarnamn:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Lösenord:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Logga in">
+    </form>
+    <p><strong>Observera:</strong> Använd lösenordet <code>Rattsagt2025</code></p>
 </body>
 </html>

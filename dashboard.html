@@ -1,1 +1,26 @@
-<!DOCTYPE html><html><head><title>Dashboard</title></head><body><h1>Välkommen Byggare10</h1><a href='min-resa.html'>Min resa</a> <button onclick='openGPT()'>GPT</button><script src='gpt-button.js'></script></body></html>
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <script>
+        window.onload = function () {
+            if (sessionStorage.getItem("loggedIn") !== "true") {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Välkommen Byggare10</h1>
+    <p>Du är nu inloggad.</p>
+    <ul>
+        <li><a href="#">Adminpanelen</a></li>
+        <li><a href="#">Min resa</a></li>
+        <li><a href="#">Logg</a></li>
+        <li><a href="#">Inställningar</a></li>
+        <li><a href="#">GPT-assistent</a></li>
+    </ul>
+</body>
+</html>

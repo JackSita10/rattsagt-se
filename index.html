@@ -1,1 +1,26 @@
-<!DOCTYPE html><html><head><title>Logga in</title></head><body><h2>Logga in</h2><form><input type='text' placeholder='Användarnamn'><input type='password' placeholder='Lösenord'><button>Logga in</button></form></body></html>
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Logga in</title>
+    <script>
+        function login() {
+            const user = document.getElementById('user').value;
+            const pass = document.getElementById('pass').value;
+            if (user === "Byggare10" && pass === "Rattsagt2025") {
+                sessionStorage.setItem("loggedIn", "true");
+                window.location.href = "dashboard.html";
+            } else {
+                alert("Fel användarnamn eller lösenord.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Logga in</h2>
+    <input type="text" id="user" placeholder="Användarnamn">
+    <input type="password" id="pass" placeholder="Lösenord">
+    <button onclick="login()">Logga in</button>
+</body>
+</html>

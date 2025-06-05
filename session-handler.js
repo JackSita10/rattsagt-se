@@ -1,0 +1,1 @@
+// Här kan man lägga till kod för att känna igen ny session

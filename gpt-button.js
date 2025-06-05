@@ -1,1 +1,1 @@
-// GPT-chatt-knapp som öppnar GPT i ny flik
+function openGPT(){ alert('GPT-knapp aktiverad!'); }

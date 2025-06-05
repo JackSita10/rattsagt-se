@@ -1,0 +1,1 @@
+// GPT-chatt-knapp som öppnar GPT i ny flik

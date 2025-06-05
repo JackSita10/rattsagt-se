@@ -1,2 +1,2 @@
-# rattsagt-se
-min hemsida för rattsagt.se
+# Rättsagt Dashboard
+Struktur och funktioner för projektet.

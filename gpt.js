@@ -1,0 +1,1 @@
+function activateGPT(){alert('GPT-knappen aktiverad!');}

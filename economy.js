@@ -1,0 +1,1 @@
+document.getElementById('economy').innerHTML+='<p>Intäktsöversikt: 0 kr</p>';

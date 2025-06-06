@@ -1,3 +1,1 @@
-if (!localStorage.getItem("loggedIn")) {
-    window.location.href = "index.html";
-}
+if(!sessionStorage.getItem('loggedIn')){window.location.href='index.html';}

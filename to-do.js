@@ -1,0 +1,1 @@
+document.getElementById('todo-list').innerHTML='<li>Inget att göra just nu</li>';

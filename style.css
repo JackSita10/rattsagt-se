@@ -1,18 +1,1 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 2rem;
-    background-color: #f9f9f9;
-}
-header {
-    background-color: #0066cc;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-section {
-    background: white;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-}
+body{font-family:sans-serif;margin:2em;}h1{color:#0055a5;}#bibliotek,#resa,#todo,#economy,#events,#news{margin-top:2em;}

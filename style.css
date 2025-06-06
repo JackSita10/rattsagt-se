@@ -1,13 +1,7 @@
 body {
-    font-family: sans-serif;
-    margin: 2em;
+  font-family: sans-serif;
+  margin: 20px;
 }
 h1 {
-    color: #003399;
-}
-section {
-    margin-bottom: 2em;
-}
-button {
-    margin-top: 0.5em;
+  color: #0055aa;
 }

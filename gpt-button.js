@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const gptButton = document.getElementById('gptChatButton');
-  if (gptButton) {
-    gptButton.addEventListener('click', () => {
-      alert('GPT-chatt är under uppbyggnad. Funktion kommer snart!');
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("gptChatButton");
+  if (button) {
+    button.addEventListener("click", () => {
+      alert("GPT-knapp tryckt! Funktionalitet kommer snart.");
     });
   }
 });

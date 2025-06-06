@@ -1,22 +1,21 @@
+
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background: #f7f9fc;
 }
-header {
-    background-color: #0074D9;
+.top-bar {
+    background: #007BFF;
     color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
 }
-main {
-    padding: 20px;
-}
-section {
-    margin-bottom: 30px;
-}
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+.section {
+    background: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }

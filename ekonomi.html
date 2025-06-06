@@ -1,21 +1,23 @@
 
-    <section id="ekonomi">
-        <h2>💼 Ekonomi & Skatteplanering</h2>
-        <div class="ekonomi-ruta">
-            <h3>Lön</h3>
-            <p>Registrera eller planera uttag.</p>
-        </div>
-        <div class="ekonomi-ruta">
-            <h3>Utdelning</h3>
-            <p>Beräkna och spåra utdelningsmöjligheter.</p>
-        </div>
-        <div class="ekonomi-ruta">
-            <h3>Moms & Skatter</h3>
-            <p>Se deadlines, belopp och tips.</p>
-        </div>
-        <div class="ekonomi-ruta">
-            <h3>Automatisering (Kommer snart)</h3>
-            <p>Rådgivning & analys via GPT & verktyg.</p>
-        </div>
-    </section>
-    
+<!-- ekonomi.html -->
+<section id="ekonomi">
+  <h2>💼 Ekonomi & Skatteplanering</h2>
+  <div class="ekonomi-panel">
+    <p>Här kan du hantera lön, utdelning, moms och andra viktiga delar av din ekonomi.</p>
+    <ul>
+      <li><strong>Lön:</strong> Ange din månadslön</li>
+      <li><strong>Utdelning:</strong> Planera och registrera utdelning</li>
+      <li><strong>Moms:</strong> Redovisa och beräkna</li>
+    </ul>
+    <form id="ekonomiForm">
+      <label for="lon">Lön (kr):</label>
+      <input type="number" id="lon" name="lon"><br>
+      <label for="utdelning">Utdelning (kr):</label>
+      <input type="number" id="utdelning" name="utdelning"><br>
+      <label for="moms">Moms (kr):</label>
+      <input type="number" id="moms" name="moms"><br>
+      <button type="submit">Spara</button>
+    </form>
+    <div id="ekonomiResultat"></div>
+  </div>
+</section>

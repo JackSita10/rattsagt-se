@@ -1,4 +1,4 @@
 
-document.getElementById('gptButton').addEventListener('click', () => {
-    alert("GPT-knappen är inte kopplad ännu.");
-});
+function startGPT() {
+    alert("GPT-start är på väg att kopplas in...");
+}

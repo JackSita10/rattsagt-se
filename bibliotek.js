@@ -1,10 +1,16 @@
 
-document.getElementById('fileInput').addEventListener('change', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    const fileInput = document.getElementById('fileInput');
     const fileList = document.getElementById('fileList');
-    fileList.innerHTML = '';
-    for (const file of this.files) {
-        const li = document.createElement('li');
-        li.textContent = file.name;
-        fileList.appendChild(li);
+
+    if (fileInput) {
+        fileInput.addEventListener('change', function () {
+            fileList.innerHTML = '';
+            for (let i = 0; i < fileInput.files.length; i++) {
+                const li = document.createElement('li');
+                li.textContent = fileInput.files[i].name;
+                fileList.appendChild(li);
+            }
+        });
     }
 });

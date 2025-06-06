@@ -1,21 +1,19 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f9fc;
     margin: 0;
     padding: 0;
 }
-.header {
+header {
     background-color: #007BFF;
     color: white;
-    padding: 1em;
-    font-size: 1.5em;
+    padding: 10px 20px;
     text-align: center;
 }
 .sektion {
-    background: white;
-    margin: 1em;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+h2 {
+    color: #333;
 }

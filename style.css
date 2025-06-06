@@ -1,21 +1,21 @@
 
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f7f9fc;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
 }
-.top-bar {
-    background: #007BFF;
-    color: white;
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-}
-.section {
-    background: white;
-    margin: 20px;
-    padding: 15px;
+.dashboard {
+    background: #ffffff;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.sektion {
+    margin-bottom: 20px;
+}
+h1 {
+    color: #2c3e50;
+}
+h2 {
+    color: #34495e;
 }

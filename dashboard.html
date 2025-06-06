@@ -2,69 +2,19 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <title>Rätt sagt Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="gpt-button.js"></script>
-    <script defer src="bibliotek.js"></script>
-    <script defer src="notiser.js"></script>
+  <meta charset="UTF-8" />
+  <title>Rätt sagt Dashboard</title>
+  <link rel="stylesheet" href="gpt-style.css" />
 </head>
 <body>
-    <div class="header">Rätt sagt Dashboard</div>
+  <h1>Rätt sagt Dashboard</h1>
+  <button onclick="openGptChat()">GPT-knapp</button>
 
-    <section class="sektion">
-        <h2>Senaste viktiga händelser</h2>
-        <ul>
-            <li>Du loggade in från ny enhet</li>
-            <li>Backup skapades automatiskt</li>
-        </ul>
-    </section>
+  <div id="gpt-chat-window">
+    <p>Hej! Ställ en fråga eller be mig fortsätta där du var.</p>
+    <!-- Här kan man lägga till textfält och skicka-knapp -->
+  </div>
 
-    <section class="sektion">
-        <h2>Att göra-lista</h2>
-        <ul>
-            <li>Färdigställ "Min resa"-vyn</li>
-            <li>Synka ekonomiöversikt</li>
-        </ul>
-    </section>
-
-    <section class="sektion">
-        <h2>Varningar & Möjligheter</h2>
-        <p>⚠️ Inget aktivt skydd kopplat till redovisning än</p>
-    </section>
-
-    <section class="sektion">
-        <h2>Intäktsöversikt</h2>
-        <p>Inga data än – koppla ekonomisystemet eller lägg till manuellt</p>
-    </section>
-
-    <section class="sektion">
-        <h2>📌 Min resa</h2>
-        <p>Här kommer det en framtida sammanställning av vad du och GPT gjort tillsammans</p>
-    </section>
-
-    <section class="sektion">
-        <h2>📚 Biblioteket – ladda upp och visa filer</h2>
-        <input type="file" id="fileInput" />
-        <ul id="fileList"></ul>
-    </section>
-
-    <section class="sektion">
-        <h2>💼 Ekonomi & Skatteplanering</h2>
-        <ul>
-            <li>Lön</li>
-            <li>Utdelning</li>
-            <li>Moms & Skatt</li>
-        </ul>
-    </section>
-
-    <section class="sektion">
-        <h2>🔔 Notiser och Händelselogg</h2>
-        <ul id="notiser">
-            <li>Du ändrade lösenordet till din e-post</li>
-        </ul>
-    </section>
-
-    <button id="gptButton">GPT-knapp</button>
+  <script src="gpt-chat.js"></script>
 </body>
 </html>

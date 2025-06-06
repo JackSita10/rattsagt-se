@@ -1,40 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Rätt Sagt – Dashboard</title>
+    <title>Rätt sagt – Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="header.js"></script>
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-content">
-            <h1>Rätt Sagt</h1>
-            <div class="user-info">Inloggad som: Användare</div>
-        </div>
+    <header>
+        <div class="logo">Rätt sagt</div>
+        <div class="user-info">Välkommen, användare</div>
     </header>
 
-    <main class="content">
-        <section id="viktigaste-handelser">
-            <h2>Senaste viktiga händelser</h2>
+    <main>
+        <section id="senaste-handelser">
+            <h2>📌 Senaste viktiga händelser</h2>
+            <ul><li>Inga händelser ännu.</li></ul>
         </section>
+
         <section id="att-gora">
-            <h2>Att göra-lista</h2>
+            <h2>✅ Att göra-lista</h2>
+            <ul><li>Inga uppgifter ännu.</li></ul>
         </section>
+
         <section id="varningar">
-            <h2>Varningar & Möjligheter</h2>
+            <h2>⚠️ Varningar & Möjligheter</h2>
+            <p>Inga varningar just nu.</p>
         </section>
+
         <section id="intakter">
-            <h2>Intäktsöversikt</h2>
+            <h2>💰 Intäktsöversikt</h2>
+            <p>Inga data än – koppla ekonomisystem eller lägg in manuellt.</p>
         </section>
+
+        <section id="gpt-knapp">
+            <h2>🧠 GPT-knapp</h2>
+            <button onclick="startGPT()">Starta GPT</button>
+        </section>
+
         <section id="bibliotek">
             <h2>📚 Biblioteket – ladda upp & visa filer</h2>
-            <input type="file" id="fileInput" />
-            <button onclick="uploadFile()">Ladda upp</button>
+            <input type="file" id="fileInput">
             <ul id="fileList"></ul>
         </section>
-        <button id="gpt-button">🔵 GPT-knapp</button>
     </main>
+
+    <script src="dashboard.js"></script>
 </body>
 </html>

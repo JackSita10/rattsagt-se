@@ -1,4 +1,2 @@
-
-function startGpt() {
-    alert("GPT-knappen är inte kopplad än.");
-}
+// GPT-knapp
+console.log('GPT-knapp aktiverad');

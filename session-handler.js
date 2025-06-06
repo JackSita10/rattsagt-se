@@ -1,1 +1,2 @@
-if(!sessionStorage.getItem('loggedIn')){window.location.href='index.html';}
+// Hanterar sessionsstatus
+console.log('Session active');

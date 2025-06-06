@@ -1,1 +1,2 @@
-function login(event){event.preventDefault();sessionStorage.setItem('loggedIn','true');window.location.href='dashboard.html';}
+// Enkel inloggningslogik
+console.log('Login script active');

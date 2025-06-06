@@ -1,4 +1,4 @@
 
 function startGPT() {
-    alert("GPT-start är på väg att kopplas in...");
+    alert("GPT är redo att hjälpa dig – detta är en förberedd knapp!");
 }

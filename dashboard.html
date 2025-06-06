@@ -2,43 +2,17 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Rätt Sagt – Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Välkommen till din Dashboard</h1>
-    </header>
-    <main>
-        <section class="dashboard-section">
-            <h2>📌 Senaste viktiga händelser</h2>
-            <ul><li>Inga nya händelser ännu</li></ul>
-        </section>
-        <section class="dashboard-section">
-            <h2>📝 Att göra-lista</h2>
-            <ul><li>Skapa affärsplan</li><li>Gå igenom varumärkesstrategi</li></ul>
-        </section>
-        <section class="dashboard-section">
-            <h2>⚠️ Varningar & Möjligheter</h2>
-            <ul><li>Ingen varning registrerad</li></ul>
-        </section>
-        <section class="dashboard-section">
-            <h2>📊 Intäktsöversikt</h2>
-            <p>Inga data ännu – koppla ekonomisystemet eller lägg in manuellt.</p>
-        </section>
-        <section class="dashboard-section">
-            <h2>💼 Ekonomi & Skatteplanering</h2>
-            <ul>
-                <li><strong>Lön:</strong> Ej definierad</li>
-                <li><strong>Utdelning:</strong> Ej angiven</li>
-                <li><strong>Moms:</strong> Ingen info tillagd</li>
-            </ul>
-            <p style="font-style: italic;">GPT-rådgivning kan aktiveras när systemet är kopplat.</p>
-        </section>
-        <button id="gptButton">🔵 Fråga GPT</button>
-    </main>
-    <script src="gpt-button.js"></script>
+    <h1>Välkommen till din Dashboard</h1>
+    <section id="bibliotek">
+        <h2>📚 Biblioteket – ladda upp & visa filer</h2>
+        <input type="file" id="fileInput">
+        <ul id="fileList"></ul>
+    </section>
+    <script src="bibliotek.js"></script>
 </body>
 </html>

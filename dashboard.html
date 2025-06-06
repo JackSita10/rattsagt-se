@@ -2,53 +2,23 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Rätt Sagt – Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="gpt-button.js" defer></script>
-    <script src="bibliotek.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Rätt Sagt Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="blue-header">
-        <h1>Välkommen till din Dashboard</h1>
-    </header>
-    <main>
+    <div class="dashboard">
+        <h1>Rätt Sagt Dashboard</h1>
+
         <section>
-            <h2>📌 Senaste viktiga händelser</h2>
-            <p>Inga nya händelser.</p>
+            <h2>📝 Notiser & Händelselogg</h2>
+            <div>
+                <input type="text" id="notisInput" placeholder="Skriv en ny notis här...">
+                <button onclick="läggTillNotis()">Lägg till</button>
+            </div>
+            <ul id="notisLista"></ul>
         </section>
-        <section>
-            <h2>✅ Att göra-lista</h2>
-            <ul><li>Inga uppgifter just nu.</li></ul>
-        </section>
-        <section>
-            <h2>⚠️ Varningar & Möjligheter</h2>
-            <p>Inga aktuella varningar.</p>
-        </section>
-        <section>
-            <h2>📈 Intäktsöversikt</h2>
-            <p>Inga data ännu – koppla ekonomisystemet eller lägg in manuellt.</p>
-        </section>
-        <section>
-            <h2>🧠 Min resa</h2>
-            <p>Här kommer det en framtida sammanställning av vad du och GPT gjort tillsammans.</p>
-        </section>
-        <section>
-            <h2>📚 Biblioteket – ladda upp & visa filer</h2>
-            <input type="file" id="fileInput" />
-            <button onclick="uploadFile()">Ladda upp</button>
-            <div id="fileList"></div>
-        </section>
-        <section>
-            <h2>💼 Ekonomi & Skatteplanering</h2>
-            <ul>
-                <li>Lön</li>
-                <li>Utdelning</li>
-                <li>Moms & Skatt</li>
-            </ul>
-        </section>
-        <button onclick="startGPT()">🧠 Starta GPT</button>
-    </main>
+    </div>
+    <script src="notiser.js"></script>
 </body>
 </html>

@@ -1,17 +1,16 @@
 
 body {
-    font-family: sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 20px;
 }
 h1 {
-    background-color: #0077cc;
-    color: white;
-    padding: 10px;
+  color: #222;
+}
+.blue-line {
+  height: 4px;
+  background-color: #007BFF;
+  margin-bottom: 20px;
 }
 section {
-    background: white;
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 8px;
+  margin-bottom: 30px;
 }

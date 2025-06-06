@@ -1,4 +1,4 @@
 
-function startGPT() {
-    alert("GPT-funktion kommer snart!");
-}
+document.getElementById("gptChatButton").addEventListener("click", function () {
+  alert("GPT-chatt öppnas (simulerad).");
+});

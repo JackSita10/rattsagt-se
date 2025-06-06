@@ -1,2 +1,3 @@
 
-// Här kan du lägga till framtida funktioner för att hantera notiser
+// Placeholder – kan i framtiden fyllas med händelsedata
+console.log("Notiser inlästa");

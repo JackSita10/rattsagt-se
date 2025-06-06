@@ -1,9 +1,29 @@
-.container {
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+
+body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 1em;
     text-align: center;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+    background: white;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 0.5em;
 }

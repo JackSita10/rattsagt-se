@@ -1,0 +1,22 @@
+#min-resa {
+    background: #f5faff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #0077cc;
+    border-radius: 8px;
+}
+#logg-container {
+    margin-bottom: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#logg-input {
+    width: 100%;
+    height: 60px;
+}
+button {
+    margin-top: 5px;
+}

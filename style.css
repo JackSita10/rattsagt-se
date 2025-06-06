@@ -1,29 +1,17 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 20px;
-    background: #f9f9f9;
+    background-color: #f4f4f4;
 }
-header {
-    background: #007acc;
+h1 {
+    background-color: #0077cc;
     color: white;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 10px;
 }
 section {
     background: white;
+    margin: 20px 0;
     padding: 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-h1, h2 {
-    margin: 0 0 10px 0;
-}
-button {
-    background: #007acc;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 8px;
 }

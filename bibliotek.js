@@ -1,13 +1,13 @@
 
 function uploadFile() {
     const input = document.getElementById('fileInput');
-    const list = document.getElementById('fileList');
+    const fileList = document.getElementById('fileList');
     if (input.files.length > 0) {
         const file = input.files[0];
-        const item = document.createElement('div');
-        item.textContent = '📄 ' + file.name;
-        list.appendChild(item);
+        const listItem = document.createElement('div');
+        listItem.textContent = '📄 ' + file.name;
+        fileList.appendChild(listItem);
     } else {
-        alert('Ingen fil vald');
+        alert("Välj en fil att ladda upp.");
     }
 }

@@ -2,26 +2,53 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <title>Ekonomi & Skatteplanering</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rätt Sagt – Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="gpt-button.js" defer></script>
+    <script src="bibliotek.js" defer></script>
 </head>
 <body>
-    <div class="dashboard">
-        <h1>Ekonomi & Skatteplanering</h1>
-        <div class="sektion">
-            <h2>Lön</h2>
-            <p>Här kan du lägga in och följa upp löneutbetalningar.</p>
-        </div>
-        <div class="sektion">
-            <h2>Utdelning</h2>
-            <p>Översikt och planering av eventuell utdelning.</p>
-        </div>
-        <div class="sektion">
-            <h2>Moms & Skatt</h2>
-            <p>Beräkning, datum och betalningar.</p>
-        </div>
-    </div>
-    <script src="ekonomi.js"></script>
+    <header class="blue-header">
+        <h1>Välkommen till din Dashboard</h1>
+    </header>
+    <main>
+        <section>
+            <h2>📌 Senaste viktiga händelser</h2>
+            <p>Inga nya händelser.</p>
+        </section>
+        <section>
+            <h2>✅ Att göra-lista</h2>
+            <ul><li>Inga uppgifter just nu.</li></ul>
+        </section>
+        <section>
+            <h2>⚠️ Varningar & Möjligheter</h2>
+            <p>Inga aktuella varningar.</p>
+        </section>
+        <section>
+            <h2>📈 Intäktsöversikt</h2>
+            <p>Inga data ännu – koppla ekonomisystemet eller lägg in manuellt.</p>
+        </section>
+        <section>
+            <h2>🧠 Min resa</h2>
+            <p>Här kommer det en framtida sammanställning av vad du och GPT gjort tillsammans.</p>
+        </section>
+        <section>
+            <h2>📚 Biblioteket – ladda upp & visa filer</h2>
+            <input type="file" id="fileInput" />
+            <button onclick="uploadFile()">Ladda upp</button>
+            <div id="fileList"></div>
+        </section>
+        <section>
+            <h2>💼 Ekonomi & Skatteplanering</h2>
+            <ul>
+                <li>Lön</li>
+                <li>Utdelning</li>
+                <li>Moms & Skatt</li>
+            </ul>
+        </section>
+        <button onclick="startGPT()">🧠 Starta GPT</button>
+    </main>
 </body>
 </html>

@@ -1,1 +1,13 @@
-body{font-family:sans-serif;margin:2em;}h1{color:#0055a5;}#bibliotek,#resa,#todo,#economy,#events,#news{margin-top:2em;}
+body {
+    font-family: sans-serif;
+    margin: 2em;
+}
+h1 {
+    color: #003399;
+}
+section {
+    margin-bottom: 2em;
+}
+button {
+    margin-top: 0.5em;
+}

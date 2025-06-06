@@ -5,61 +5,27 @@
     <meta charset="UTF-8">
     <title>Rättsagt Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <script src="gpt-button.js" defer></script>
-    <script src="bibliotek.js" defer></script>
+    <script defer src="bibliotek.js"></script>
+    <script defer src="gpt-minne.js"></script>
 </head>
 <body>
     <header>
         <h1>Rättsagt Dashboard</h1>
+        <button onclick="startGPT()">🧠 GPT-knapp</button>
     </header>
 
-    <section class="sektion">
-        <h2>Senaste viktiga händelser</h2>
-        <p>Här visas de senaste händelserna du behöver ha koll på.</p>
+    <section>
+        <h2>Min resa</h2>
+        <div id="min-resa">
+            Här kommer det en framtida sammanställning av vad du och GPT gjort tillsammans.
+        </div>
     </section>
 
-    <section class="sektion">
-        <h2>Att göra-lista</h2>
-        <ul>
-            <li>🔲 Sätt upp påminnelser</li>
-            <li>🔲 Följ upp ekonomi</li>
-            <li>🔲 Planera nästa steg</li>
-        </ul>
-    </section>
-
-    <section class="sektion">
-        <h2>Varningar & Möjligheter</h2>
-        <p>Inga aktuella varningar.</p>
-    </section>
-
-    <section class="sektion">
-        <h2>Intäktsöversikt</h2>
-        <p>Inga data än – koppla ekonomisystemet eller lägg in manuellt.</p>
-    </section>
-
-    <section class="sektion">
-        <h2>GPT-knapp</h2>
-        <button onclick="startGPT()">Starta GPT</button>
-    </section>
-
-    <section class="sektion">
+    <section>
         <h2>Biblioteket – ladda upp och visa filer</h2>
         <input type="file" id="fileInput" />
+        <button onclick="uploadFile()">Ladda upp</button>
         <ul id="fileList"></ul>
-    </section>
-
-    <section class="sektion">
-        <h2>Min resa</h2>
-        <p>Här kommer det en framtida sammanställning av vad du och GPT gjort tillsammans.</p>
-    </section>
-
-    <section class="sektion">
-        <h2>Ekonomi & Skatteplanering</h2>
-        <ul>
-            <li>Lön</li>
-            <li>Utdelning</li>
-            <li>Moms & Skatt</li>
-        </ul>
     </section>
 </body>
 </html>

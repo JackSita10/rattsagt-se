@@ -1,16 +1,10 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-    const fileInput = document.getElementById('fileInput');
-    const fileList = document.getElementById('fileList');
+function uploadFile() {
+    const input = document.getElementById('fileInput');
+    const list = document.getElementById('fileList');
+    if (input.files.length === 0) return;
 
-    if (fileInput) {
-        fileInput.addEventListener('change', function () {
-            fileList.innerHTML = '';
-            for (let i = 0; i < fileInput.files.length; i++) {
-                const li = document.createElement('li');
-                li.textContent = fileInput.files[i].name;
-                fileList.appendChild(li);
-            }
-        });
-    }
-});
+    const li = document.createElement('li');
+    li.textContent = input.files[0].name + ' (uppladdad lokalt – ej sparad)';
+    list.appendChild(li);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Rätt Sagt Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bibliotek.js" defer></script>
+</head>
+<body>
+    <h1>Välkommen till din dashboard</h1>
+
+    <section id="senaste">
+        <h2>✅ Senaste viktiga händelser</h2>
+        <ul>
+            <li>Projekt initierat</li>
+            <li>Inloggning aktiverad</li>
+            <li>Dashboard uppdaterad</li>
+        </ul>
+    </section>
+
+    <section id="todo">
+        <h2>✅ Att göra-lista</h2>
+        <ul>
+            <li>Färdigställ GPT-chatt</li>
+            <li>Lägg till datakoppling till ekonomi</li>
+            <li>Testa dashboarden från annan enhet</li>
+        </ul>
+    </section>
+
+    <section id="alerts">
+        <h2>✅ Varningar & Möjligheter</h2>
+        <p>Allt fungerar just nu – fortsätt utvecklingen!</p>
+    </section>
+
+    <section id="income">
+        <h2>✅ Intäktsöversikt</h2>
+        <p>Inga data än – koppla ekonomisystemet eller lägg till manuellt.</p>
+    </section>
+
+    <section id="gpt">
+        <h2>✅ GPT-knapp</h2>
+        <button onclick="alert('GPT-knapp tryckt – funktionalitet läggs till senare.')">Starta GPT</button>
+    </section>
+
+    <section id="bibliotek">
+        <h2>✅ Biblioteket – ladda upp & visa filer</h2>
+        <input type="file" id="fileInput" />
+        <button onclick="uploadFile()">Ladda upp</button>
+        <div id="fileList"></div>
+    </section>
+</body>
+</html>

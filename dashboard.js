@@ -1,13 +1,13 @@
-
 function startGPT() {
-    alert("GPT startar här – integration kommer snart!");
+    alert("GPT-knappen är förberedd för framtida koppling.");
 }
-function uploadFile() {
-    const input = document.getElementById("fileInput");
-    const list = document.getElementById("fileList");
-    if (input.files.length > 0) {
-        const li = document.createElement("li");
-        li.textContent = input.files[0].name + " (uppladdad)";
-        list.appendChild(li);
+
+document.getElementById('fileInput').addEventListener('change', function () {
+    const fileList = document.getElementById('fileList');
+    fileList.innerHTML = '';
+    for (let i = 0; i < this.files.length; i++) {
+        const li = document.createElement('li');
+        li.textContent = this.files[i].name;
+        fileList.appendChild(li);
     }
-}
+});

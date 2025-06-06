@@ -1,29 +1,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    margin: 2rem;
+    background-color: #f9f9f9;
 }
-
 header {
-    background-color: #007acc;
+    background-color: #0066cc;
     color: white;
-    padding: 1em;
+    padding: 1rem;
     text-align: center;
 }
-
-main {
-    padding: 1em;
-}
-
 section {
-    margin-bottom: 2em;
     background: white;
-    padding: 1em;
+    padding: 1rem;
+    margin: 1rem 0;
     border-radius: 5px;
-}
-
-button {
-    margin-top: 0.5em;
 }

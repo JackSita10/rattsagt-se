@@ -1,13 +1,10 @@
 
-function uploadFile() {
-    const input = document.getElementById('fileInput');
+document.getElementById('fileInput').addEventListener('change', function() {
     const fileList = document.getElementById('fileList');
-    if (input.files.length > 0) {
-        const file = input.files[0];
-        const listItem = document.createElement('div');
-        listItem.textContent = '📄 ' + file.name;
-        fileList.appendChild(listItem);
-    } else {
-        alert("Välj en fil att ladda upp.");
+    fileList.innerHTML = '';
+    for (const file of this.files) {
+        const li = document.createElement('li');
+        li.textContent = file.name;
+        fileList.appendChild(li);
     }
-}
+});

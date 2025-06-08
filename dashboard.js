@@ -1,1 +1,1 @@
-console.log('Dashboard loaded');
+document.getElementById('main').innerText = 'Välkommen till din dashboard!';

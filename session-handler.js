@@ -1,1 +1,1 @@
-if (!sessionStorage.getItem('user')) window.location.href = 'login.html';
+if(!sessionStorage.getItem('user')) window.location='login.html';

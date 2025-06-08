@@ -1,1 +1,1 @@
-document.querySelector('form').addEventListener('submit', e => { e.preventDefault(); sessionStorage.setItem('user', 'loggedin'); window.location.href = 'dashboard.html'; });
+function login() { const u = document.getElementById('username').value; const p = document.getElementById('password').value; if(u==='admin' && p==='test'){ sessionStorage.setItem('user','admin'); window.location='dashboard.html'; return false;} alert('Fel användarnamn eller lösenord'); return false; }

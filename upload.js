@@ -1,1 +1,1 @@
-console.log('Upload initierad');
+console.log('Filuppladdning aktiverad');

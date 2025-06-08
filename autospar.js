@@ -1,1 +1,1 @@
-console.log('Autospar aktiv');
+console.log('Autospar aktivt');

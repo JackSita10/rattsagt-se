@@ -1,1 +1,1 @@
-console.log('Min Resa');
+console.log('Min resa laddad');

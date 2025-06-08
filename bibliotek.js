@@ -1,1 +1,1 @@
-console.log('Bibliotek');
+console.log('Bibliotek laddat');

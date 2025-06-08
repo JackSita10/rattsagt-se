@@ -1,1 +1,1 @@
-console.log('GPT-funktion aktiverad');
+function frågaGPT(fraga){console.log('GPT svarar på:', fraga);}

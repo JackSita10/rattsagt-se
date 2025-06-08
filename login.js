@@ -1,1 +1,1 @@
-// login.js
+// JS för e-postinloggning via Supabase

@@ -1,1 +1,1 @@
-// min-resa.js
+// JS för min resa

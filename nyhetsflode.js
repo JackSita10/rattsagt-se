@@ -1,1 +1,1 @@
-// nyhetsflode.js
+// JS för nyhetsflöde

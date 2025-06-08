@@ -1,1 +1,1 @@
-// bibliotek.js
+// JS för bibliotek

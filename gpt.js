@@ -1,1 +1,1 @@
-// gpt.js
+// GPT-integration

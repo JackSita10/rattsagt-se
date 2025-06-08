@@ -1,1 +1,1 @@
-// dashboard.js
+// JS för dashboard-funktioner

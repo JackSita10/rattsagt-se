@@ -1,1 +1,1 @@
-// ekonomi.js
+// JS för ekonomi

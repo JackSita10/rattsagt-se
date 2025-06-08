@@ -1,1 +1,1 @@
-// session-handler.js
+// Sessionhantering

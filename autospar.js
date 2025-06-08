@@ -1,1 +1,1 @@
-// autospar.js
+// Autosparfunktion

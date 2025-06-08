@@ -1,1 +1,1 @@
-// Hanterar användarsessioner och autentisering
+if (!sessionStorage.getItem('user')) window.location.href = 'login.html';

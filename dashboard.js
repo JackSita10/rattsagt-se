@@ -1,1 +1,1 @@
-document.getElementById("app").innerHTML = "<p>Dashboard laddad. Funktioner kommer här.</p>";
+console.log('Dashboard loaded');

@@ -1,1 +1,1 @@
-// JavaScript för ekonomisektionen
+console.log('Ekonomi');

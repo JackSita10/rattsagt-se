@@ -1,1 +1,1 @@
-function activateGPT(){alert('GPT-knappen aktiverad!');}
+console.log('GPT-funktion aktiverad');

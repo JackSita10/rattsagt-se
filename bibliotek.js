@@ -1,1 +1,1 @@
-// Logik för filhantering
+console.log('Bibliotek');

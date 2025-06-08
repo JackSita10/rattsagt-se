@@ -1,1 +1,1 @@
-// JS för dynamiskt nyhetsflöde
+console.log('Nyhetsflöde');

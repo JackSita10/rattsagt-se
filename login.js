@@ -1,2 +1,1 @@
-// Enkel inloggningslogik
-console.log('Login script active');
+document.querySelector('form').addEventListener('submit', e => { e.preventDefault(); sessionStorage.setItem('user', 'loggedin'); window.location.href = 'dashboard.html'; });

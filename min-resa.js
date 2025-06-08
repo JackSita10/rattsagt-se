@@ -1,1 +1,1 @@
-// Logik för minnesfunktion
+console.log('Min Resa');

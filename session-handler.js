@@ -1,2 +1,1 @@
-// Hanterar sessionsstatus
-console.log('Session active');
+// Hanterar användarsessioner och autentisering

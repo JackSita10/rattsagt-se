@@ -1,1 +1,1 @@
-// Logik för nyhetsflöde
+// JS för dynamiskt nyhetsflöde

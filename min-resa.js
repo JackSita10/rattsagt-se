@@ -1,1 +1,0 @@
-// Min Resa logic

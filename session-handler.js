@@ -1,1 +1,1 @@
-if(!sessionStorage.getItem('user')) window.location='login.html';
+// Session handling logic

@@ -1,1 +1,1 @@
-console.log('Bibliotek laddat');
+// Bibliotek logic

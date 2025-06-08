@@ -1,1 +1,1 @@
-console.log('Nyhetsflöde laddat');
+// Nyhetsflöde logic

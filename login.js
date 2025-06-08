@@ -1,1 +1,1 @@
-function login() { const u = document.getElementById('username').value; const p = document.getElementById('password').value; if(u==='admin' && p==='test'){ sessionStorage.setItem('user','admin'); window.location='dashboard.html'; return false;} alert('Fel användarnamn eller lösenord'); return false; }
+// Login JS

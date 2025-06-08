@@ -1,1 +1,1 @@
-document.getElementById('main').innerText = 'Välkommen till din dashboard!';
+// Dashboard JS

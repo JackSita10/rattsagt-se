@@ -1,1 +1,1 @@
-console.log('Autospar aktivt');
+// Autosave function

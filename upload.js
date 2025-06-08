@@ -1,1 +1,1 @@
-console.log('Filuppladdning aktiverad');
+// Upload handler

@@ -1,1 +1,1 @@
-console.log('Ekonomi laddat');
+// Ekonomi logic

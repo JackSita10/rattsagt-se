@@ -1,10 +1,8 @@
 # Rättsagt Dashboard
 
-Ladda upp alla filer till GitHub. Använd Vercel för att deploya.
-
 ## Inloggning
-- Supabase med e-postkod (lösenordslöst)
+Email: admin@rattsagt.se
+Password: Rattsagt2025!
 
-## Miljövariabler (läggs in i Vercel)
-- `SUPABASE_URL`
-- `SUPABASE_ANON_KEY`
+## Så här gör du...
+(kompletta instruktioner fylls i)

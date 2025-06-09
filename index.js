@@ -1,3 +1,8 @@
 export default function Home() {
-  return <h1>Välkommen till Rätt Sagt – logga in med Supabase</h1>;
+  return (
+    <div>
+      <h1>Välkommen till Rätt Sagt Dashboard</h1>
+      <p>Logga in för att fortsätta.</p>
+    </div>
+  );
 }

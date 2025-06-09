@@ -1,1 +1,0 @@
-// Att göra-funktion

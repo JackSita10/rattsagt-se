@@ -1,32 +1,35 @@
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { supabase } from '../utils/supabaseClient';
+import { useState } from 'react'
+import { supabase } from '../lib/supabaseClient'
+import { useRouter } from 'next/router'
 
 export default function Home() {
-  const router = useRouter();
-
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session) {
-        router.push('/dashboard');
-      }
-    });
-  }, []);
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const router = useRouter()
 
   const handleLogin = async (e) => {
-    e.preventDefault();
-    const email = e.target.email.value;
-    await supabase.auth.signInWithOtp({ email });
-    alert('Check your email for the login link!');
-  };
+    e.preventDefault()
+    const { error } = await supabase.auth.signInWithOtp({ email })
+    if (error) {
+      setMessage(error.message)
+    } else {
+      setMessage('Kolla din e-post för en inloggningslänk!')
+    }
+  }
 
   return (
-    <div>
+    <div style={{ padding: 40 }}>
       <h1>Logga in</h1>
       <form onSubmit={handleLogin}>
-        <input type="email" name="email" placeholder="Din e-post" required />
+        <input
+          type="email"
+          placeholder="Din e-post"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
         <button type="submit">Logga in</button>
       </form>
+      <p>{message}</p>
     </div>
-  );
+  )
 }

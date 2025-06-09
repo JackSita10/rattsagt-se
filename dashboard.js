@@ -1,25 +1,33 @@
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import { supabase } from '../utils/supabaseClient';
+import { useEffect, useState } from 'react'
+import { supabase } from '../lib/supabaseClient'
+import { useRouter } from 'next/router'
 
 export default function Dashboard() {
-  const [user, setUser] = useState(null);
-  const router = useRouter();
+  const [user, setUser] = useState(null)
+  const router = useRouter()
 
   useEffect(() => {
-    supabase.auth.getUser().then(({ data: { user } }) => {
+    const getUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser()
       if (!user) {
-        router.push('/');
+        router.push('/')
       } else {
-        setUser(user);
+        setUser(user)
       }
-    });
-  }, []);
+    }
+    getUser()
+  }, [])
+
+  const handleLogout = async () => {
+    await supabase.auth.signOut()
+    router.push('/')
+  }
 
   return (
-    <div>
-      <h1>Välkommen till Rattsagt Dashboard</h1>
-      <p>{user?.email}</p>
+    <div style={{ padding: 40 }}>
+      <h1>Dashboard</h1>
+      <p>Välkommen, {user?.email}</p>
+      <button onClick={handleLogout}>Logga ut</button>
     </div>
-  );
+  )
 }

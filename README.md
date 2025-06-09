@@ -1,8 +1,8 @@
-# Rättsagt Dashboard
+# Rätt Sagt – Dashboard
 
-## Inloggning
-Email: admin@rattsagt.se
-Password: Rattsagt2025!
-
-## Så här gör du...
-(kompletta instruktioner fylls i)
+Detta är en Next.js-baserad dashboard med Supabase-inloggning.
+1. Lägg in miljövariabler i Vercel:
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+2. Deploya via Vercel (automatiskt från GitHub)
+3. Klart!

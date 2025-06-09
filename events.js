@@ -1,1 +1,0 @@
-document.getElementById('events').innerHTML+='<p>Systemet är uppdaterat.</p>';

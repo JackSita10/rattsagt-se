@@ -1,1 +1,0 @@
-Den här mappen används för bilder, ikoner, teckensnitt etc.

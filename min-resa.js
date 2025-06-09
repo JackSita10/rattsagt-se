@@ -1,1 +1,0 @@
-// JS för min resa

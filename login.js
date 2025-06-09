@@ -1,1 +1,0 @@
-// JS för e-postinloggning via Supabase

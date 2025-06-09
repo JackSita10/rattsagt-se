@@ -1,1 +1,0 @@
-// GPT-chatt logik

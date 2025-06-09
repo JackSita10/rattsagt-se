@@ -1,1 +1,0 @@
-// Struktur för versionshistorik

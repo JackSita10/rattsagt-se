@@ -1,0 +1,11 @@
+# Byggmappar
+.next
+out
+node_modules
+
+# Lokala miljövariabler
+.env.local
+
+# Systemfiler
+.DS_Store
+Thumbs.db
